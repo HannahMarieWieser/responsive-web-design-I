@@ -186,26 +186,28 @@ header .logo {
 .cta img {
   display: inline-block;
   margin-top: 69px;
-  border : 1px solid purple;
 }
 
-/* cta mobile 800 */
+/* cta tablet 800 */
 @media (max-width: 800px){
-   .cta .cta-text{
+
+    .cta .cta-text{
         display:flex;
         flex-direction: column;
-        margin-top: 0px;
-        padding-top: 60px;
         justify-content: center;
-   }
-   
-    .cta img{
-        display:none;
+        margin-top: 0px;
+        padding-top: 60px; 
     }
-
+   
     .cta .cta-text button {
         box-sizing: content-box;
         width: 100px;
+        position: relative;
+        align-self: center;
+    }
+
+    .cta img{
+        display:none;
     }
 
 }
@@ -217,7 +219,6 @@ header .logo {
         display:none;
     }
 }
-
 
 
 .main-content {
@@ -259,6 +260,71 @@ header .logo {
   margin-right: 0;
 }
 
+
+/* maincontent box + top +img + bottom tablet 800 */
+@media (max-width: 800px){
+    .main-content{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+   .top-content{
+       display: flex;
+       width: 100%;
+   }
+
+   /* maincontent img tablet 800 */
+    .main-content .middle-img{
+        display:flex;
+        width: 100%;
+    }
+    
+
+    /* bottom content tablet 800 */
+    .bottom-content{
+        display: flex;
+        width: 100%;
+    }
+
+
+}
+
+
+/* maincontent mobile 500 */
+@media (max-width: 500px){
+    .top-content{
+        flex-direction: column;
+    }
+
+    .top-content  .text-content{
+        padding-bottom: 40px;
+    }
+
+    .top-content .text-content p{
+        width: 100%;
+
+    }
+
+    .main-content .middle-img {
+        margin-top: 0px;
+    }
+
+
+    .bottom-content{
+        flex-direction: column;
+    }
+
+    .bottom-content  .text-content{
+        padding-bottom: 40px;
+    }
+
+}
+
+
+
+
+
+
 .contact {
   margin-top: 57px;
   border-top: 1px solid black;
@@ -269,9 +335,26 @@ header .logo {
   margin: 20px 0;
 }
 
+/* contact mobile 500 */
+@media (max-width: 500px){
+    .contact {
+        margin-top: 0px;
+        padding-left: 20px;
+    }
+}
+
+
+/* footer tablet 800 */
+@media (max-width: 800px){
+    footer{
+        padding-left: 17px;
+    }
+
+}
+
+
 footer {
   margin: 32px 0;
   text-align: center;
   font-size: 14px;
 }
-
